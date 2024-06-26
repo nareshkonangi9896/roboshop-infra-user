@@ -18,3 +18,9 @@ output "private_subnets" {
 output "database_subnets" {
      value = module.vpc.database_subnet_ids
 }
+output "security_group_id" {
+    value = module.allow_all_sg.security_group_id
+}
+output "ips" {
+     value = local.ips
+}
